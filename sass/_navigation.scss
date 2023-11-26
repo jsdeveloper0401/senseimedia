@@ -1,0 +1,61 @@
+
+#navbar.navbar-shrink {
+  padding: 10px 0px;
+  background-color: white;
+  box-shadow: 0px 0px 10px 5px black;
+}
+#navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:aqua;
+  transition: 0.5s;
+  z-index: 10000;
+}
+#navbar-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 30px;
+  border: none;
+  background: transparent;
+  z-index: 9999;
+}
+.close {
+  font-size: 30px;
+  color: var(--dark);
+  transition: all 500ms;
+}
+.open {
+  display: none;
+  color: black;
+}
+.res-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.res-nav__link {
+  color: #000;
+  font-family: $Manrope;
+  font-size: 40px;
+}
+#team-carousel :is(.owl-prev, .owl-next) {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #F32C6D;
+    box-shadow:0px 0px 3px 5px rgb(47, 45, 45);
+  }
