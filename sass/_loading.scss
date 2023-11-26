@@ -5,9 +5,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   @include center;
     transition: 0.5s;
     background-color: rgba(0, 0, 0, 0.75);
 }

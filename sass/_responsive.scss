@@ -6,8 +6,7 @@
 @media (max-width: 1210px) {
   .flayer__wrapper{
    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+   @include center;
     gap: 30px;
   }
 }
@@ -19,10 +18,8 @@
 }
 @media (max-width: 1000px) {
   .header__row {
-    display: flex;
+     @include center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 50px;
   }
   .header__img {
@@ -38,14 +35,12 @@
 @media (max-width: 1130px) {
   .header__info {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    @include center;
     gap: 30px;
   }
   .header__buttons {
-    justify-content: center;
+   @include center;
     flex-wrap: wrap;
-    align-items: center;
     gap: 20px;
   }
   .header__img {
@@ -61,14 +56,12 @@
 @media (max-width: 900px) {
   .footer__info {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+     @include center;
     text-align: center;
   }
   .bottom__card{
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+   @include center;
   }
 }
 @media (max-width: 600px) {
@@ -84,8 +77,7 @@
   }
   .bottom__card{
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+   @include center;
   }
   .form__input,
   .textarea{
@@ -102,8 +94,7 @@
   }
   .bottom__card{
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+   @include center;
   }
 }
 @media (max-width: 320px) {
@@ -142,8 +133,7 @@
 @media (max-width: 412px) {
   .header__buttons {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   @include center;
     gap: 40px;
   }
 
@@ -151,8 +141,7 @@
 @media (max-width: 330px) {
   .nav__info {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   @include center;
   }
 }
 // responsive end

@@ -11,10 +11,8 @@
   left: -100%;
   height: 100%;
   width: 100%;
-  display: flex;
+  @include center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color:aqua;
   transition: 0.5s;
   z-index: 10000;
@@ -38,10 +36,8 @@
   color: black;
 }
 .res-nav__list {
-  display: flex;
+   @include center;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 40px;
 }
 .res-nav__link {
@@ -52,10 +48,8 @@
 #team-carousel :is(.owl-prev, .owl-next) {
     width: 45px;
     height: 45px;
-    display: flex;
     padding: 20px;
-    justify-content: center;
-    align-items: center;
+   @include center;
     background-color: #F32C6D;
     box-shadow:0px 0px 3px 5px rgb(47, 45, 45);
   }
