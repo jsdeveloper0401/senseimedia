@@ -7,6 +7,13 @@
 @import "./responsive";
 @import "./footer";
 // container
+// variables
+$white:#fff;
+$text-color:#333;
+$primary-color:#77B2D3;
+$Manrope: "Manrope", sans-serif;
+$btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
+
 .container{
     max-width: 1210px;
     margin: auto;
@@ -15,7 +22,7 @@
 
 #navbar.navbar-shrink {
   padding: 10px;
-  background-color: white;
+  background-color: $white;
   box-shadow: 0px 0px 10px 5px $btn-color;
 }
 #navbar-responsive {
@@ -63,25 +70,18 @@
   font-family: $Manrope;
   font-size: 40px;
 }
-// variables
-$white:#fff;
-$text-color:#333;
-$primary-color:#77B2D3;
-$Manrope: "Manrope", sans-serif;
-$btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
-
 .btn {
   padding: 15px 30px;
   border-radius: 9px;
   background:$btn-color;
-  color: #fff !important;
+  color: $white !important;
   font-family: $Manrope !important;
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
   display: flex;
   margin-left:0;
-  color: var(--white);
+  color: $white;
   border-radius: 4px;
 }
 .btn:hover{
@@ -116,7 +116,8 @@ $btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
 }
 .title {
   color: #173a56;
-  font-family: "Poppins700";
+  font-family: $Manrope;
+  font-weight: 700;
   font-size: 30px;
   line-height: 28px;
 }
@@ -142,15 +143,16 @@ $btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
 }
 .nav__btn {
   color: #173a56;
-  font-family: "Poppins600";
+  font-family: $Manrope;
+  font-weight: 600;
   font-size: 16px;
   padding: 10px 25px;
   border-radius: 4px;
   border: 1px solid #bcd0e5;
 }
 .nav__btn-active {
-  background: var(--primary-color);
-  color: var(--white);
+  background: $primary-color;
+  color: $white;
 }
 #mode__btn {
   width: 36px;
@@ -191,7 +193,7 @@ $btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
 }
 .header__text {
   margin-top: 15px;
-  color: #333;
+  color: $text-color;
   font-family: $Manrope;
   font-size: 16px;
   font-weight: 600;
@@ -206,11 +208,9 @@ $btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
 .btn__secondary {
   border-radius: 250px;
   background: $primary-color;
-  color: $white;
-  font-family: $Manrope;
   padding: 14px 30px;
   color: $white;
-  font-family: Manrope;
+  font-family: $Manrope;
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
@@ -226,10 +226,10 @@ $btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
   padding: 40px 55px;
   flex-shrink: 0;
   border-radius: 20px;
-  background: #fff;
+  background:$white;
   box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
   h3{
-    color: #333;
+    color: $text-color;
     font-family: $Manrope;
     font-size: 38px;
     font-weight: 700;
@@ -280,11 +280,11 @@ $btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
   height: 74px;
   padding: 11px 0;
   border-radius: 15px 15px 0px 0px;
-  background: #77B2D3;
+  background: $primary-color;
   box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
 }
 .flayer__card__title{
-    color: #FFF;
+    color:$white;
     text-align: center;
     font-family: $Manrope;
     font-size: 18px;
@@ -360,7 +360,7 @@ $btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
 }
 .form__left h2{
   max-width: 529px;
-  color: var(--, #333);
+  color:$text-color;
   font-family: $Manrope;
   font-size: 38px;
   font-style: normal;
@@ -370,7 +370,7 @@ $btn-color:linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
 }
 .form__left p{
   max-width: 462px;
-  color: var(--, #333);
+  color: $text-color;
   font-family: $Manrope;
   font-size: 16px;
   font-weight: 400;
@@ -390,10 +390,10 @@ form{
     margin-top: 22px;
     border:none;
     border-radius: 7px;
-    background: var(--, #FFF);
+    background: $white;
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);   
     flex-shrink: 0;
-    color: var(--, #333);
+    color: $text-color;
     font-family: $Manrope;
     font-size: 16px;
     font-weight: 300;
@@ -407,7 +407,7 @@ form textarea{
     flex-shrink: 0;
     font-size: 16px;
     border-radius: 7px;
-    background: #fff;
+    background:$white;
     border:none;
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
     padding: 16px 20px;
@@ -428,7 +428,7 @@ form textarea{
 .form__btn{
   margin-top: 20px;
   padding: 14px 55px;
-  color:#FFF;
+  color:$white;
   font-family: $Manrope;
   font-size: 16px;
   font-weight: 600;
@@ -442,7 +442,7 @@ form textarea{
 }
 footer{
   width: 100%;
-  background: #fff;
+  background:$white;
 }
 
 // flayer start
@@ -467,7 +467,7 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px;
-    background: #fff;
+    background: $white;
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.08);
     margin-bottom: 20px;
    
@@ -485,9 +485,10 @@ footer{
     align-items: center;
     justify-content: center;
     h3{
-      color: #fff;
+      color: $white;
     text-align: center;
-    font-family: "Manrope800";
+    font-family: $Manrope;
+    font-weight: 800;
     font-size: 18px;
     line-height: 26px;
     text-transform: uppercase;
@@ -539,7 +540,7 @@ footer{
          font-family:$Manrope;
         font-size: 30px;
         line-height: 24px;
-        color: linear-gradient(115deg, #F32C6D 10.12%, #CB1D95 100.01%);
+        color: $btn-color;
       }
 
 
@@ -574,7 +575,7 @@ footer{
   }
   &__text {
     max-width: 508px;
-    color: #333;
+    color: $text-color;
     font-family: $Manrope;
     font-weight: 400;
     font-size: 16px;
