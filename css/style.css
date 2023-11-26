@@ -524,6 +524,16 @@ textarea {
             justify-content: center;
     text-align: center;
   }
+  .bottom__card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media (max-width: 600px) {
   .help__img {
@@ -536,6 +546,21 @@ textarea {
   .help__inputs {
     gap: 20px;
   }
+  .bottom__card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form__input,
+  .textarea {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 @media (max-width: 450px) {
   .nav__img {
@@ -543,6 +568,16 @@ textarea {
   }
   .help__cheked {
     gap: 0px;
+  }
+  .bottom__card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media (max-width: 320px) {
@@ -1003,8 +1038,7 @@ textarea {
 }
 
 .header__bottom__card {
-  width: 345px;
-  height: 86px;
+  max-width: 345px;
   margin-top: 35px;
   padding: 0px 45px;
   border-right: 1px solid #C7C7C7;
@@ -1021,6 +1055,12 @@ textarea {
 }
 .header__bottom__card small {
   font-size: 24px;
+}
+.header__bottom__card p {
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
 }
 
 .flayer {

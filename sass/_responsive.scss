@@ -65,6 +65,11 @@
     justify-content: center;
     text-align: center;
   }
+  .bottom__card{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 600px) {
   .help__img {
@@ -77,6 +82,16 @@
   .help__inputs {
     gap: 20px;
   }
+  .bottom__card{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .form__input,
+  .textarea{
+    width: 100%;
+    max-width: 500px;
+  }
 }
 @media (max-width: 450px) {
   .nav__img {
@@ -84,6 +99,11 @@
   }
   .help__cheked {
     gap: 0px;
+  }
+  .bottom__card{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media (max-width: 320px) {
